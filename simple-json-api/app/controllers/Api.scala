@@ -11,7 +11,6 @@ object Api extends Controller {
   }
 
   def json(name:String) = Action {
-	  Ok("The name you provided was " + name)
 	  try {
 		  val json = Play.classloader.getResourceAsStream(name + ".json");
 		  Ok(scala.io.Source.fromInputStream(json).mkString)
