@@ -4,6 +4,9 @@
 
 # Home page
 GET     /                           controllers.Application.index
+GET     /ex0                        controllers.Api.ex0
+GET     /ex1                        controllers.Api.ex1
+GET     /ex2                        controllers.Api.ex2
 GET     /api/json/   	            controllers.Api.index
 GET     /api/json/:name             controllers.Api.json(name)
 
